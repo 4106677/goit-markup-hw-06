@@ -413,8 +413,56 @@
             <button type="button" class="modal-close" data-modal-close>
                 <svg class="modal-close-ico" width="24" height="24">
                     <use href="./images/icons.svg#icon-modal-close"></use>
+
                 </svg>
             </button>
+            <p class="modal-header">
+                Оставьте свои данные, мы вам перезвоним
+            </p>
+            <form class="modal-form">
+                <div class="modal-group" role="group" aria-labelledby="contact-details-head">
+                    <label class="modal-label" for="user-name">Имя</label>
+                    <div class="modal-list">
+                        <input placeholder="" type="email" name="user-name" id="user-name" class="modal-input" />
+                        <svg class="modal-ico" height="18" width="18">
+                            <use href="./images/icons.svg#icon-person-black"></use>
+                        </svg>
+                    </div>
+
+                    <label class="modal-label" for="user-phone">Телефон</label>
+                    <div class="modal-list">
+                        <input placeholder="" type="email" name="phone" id="user-email" class="modal-input" />
+                        <svg class="modal-ico" height="18" width="18">
+                            <use href="./images/icons.svg#icon-phone-black"></use>
+                        </svg>
+                    </div>
+
+                    <label class="modal-label" for="user-email">Почта</label>
+                    <div class="modal-list">
+                        <input placeholder=" " type="email" name="email" id="user-email" class="modal-input" />
+                        <svg class="modal-ico" height="18" width="18">
+                            <use href="./images/icons.svg#icon-email-black"></use>
+                        </svg>
+                    </div>
+
+                    <label class="modal-label" for="user-email">Комментарий</label>
+                    <textarea name="Комментарий" id="" cols="30" rows="10" placeholder="Введите текст"></textarea>
+
+                    <div class="modal-checkbox">
+                        <input type="checkbox" name="privacy" id="privacy" class="input-check visually-hidden" />
+                        <label class="label-check" for="privacy">
+                            <span>
+                                <svg width="11" height="8" class="check-ico">
+                                    <use href="./images/icons.svg#icon-checkbox"></use>
+                                </svg>
+                            </span>Соглашаюсь с рассылкой и принимаю&nbsp<a href="">Условия
+                                договора</a></label>
+                    </div>
+
+                    <button type="submit" class="modal-btn">Отправить</button>
+                </div>
+
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
