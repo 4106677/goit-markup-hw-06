@@ -399,7 +399,7 @@
                 </p>
                 <form class="subscribe-form">
                     <!-- <label for="user-email">Email</label> -->
-                    <input placeholder="E-mail" type="email" name="email" id="user-email" class="subscribe-input" />
+                    <input placeholder="E-mail" type="email" name="email" id="email" class="subscribe-input" />
                     <button type="submit" class="subscribe-btn">Подписаться</button>
                     <svg class="footer-send-ico">
                         <use href="./images/icons.svg#icon-send"></use>
@@ -416,13 +416,13 @@
 
                 </svg>
             </button>
-            <p class="modal-header">
-                Оставьте свои данные, мы вам перезвоним
-            </p>
-            <div class="modal-group" role="group" aria-labelledby="contact-details-head">
+            <form>
+                <p class="modal-header">
+                    Оставьте свои данные, мы вам перезвоним
+                </p>
                 <label class="modal-label" for="user-name">Имя</label>
                 <div class="modal-list">
-                    <input placeholder="" type="email" name="user-name" id="user-name" class="modal-input" />
+                    <input type="email" name="user-name" id="user-name" class="modal-input" />
                     <svg class="modal-ico" height="18" width="18">
                         <use href="./images/icons.svg#icon-person-black"></use>
                     </svg>
@@ -430,7 +430,7 @@
 
                 <label class="modal-label" for="user-phone">Телефон</label>
                 <div class="modal-list">
-                    <input placeholder="" type="email" name="phone" id="user-email" class="modal-input" />
+                    <input placeholder="" type="tel" name="user-phone" id="user-phone" class="modal-input" />
                     <svg class="modal-ico" height="18" width="18">
                         <use href="./images/icons.svg#icon-phone-black"></use>
                     </svg>
@@ -444,8 +444,9 @@
                     </svg>
                 </div>
 
-                <label class="modal-label" for="user-email">Комментарий</label>
-                <textarea name="Комментарий" id="" cols="30" rows="10" placeholder="Введите текст"></textarea>
+                <label class="modal-label" for="user-comment">Комментарий</label>
+                <textarea name="Комментарий" id="user-comment" cols="30" rows="10"
+                    placeholder="Введите текст"></textarea>
 
                 <div class="modal-checkbox">
                     <input type="checkbox" name="privacy" id="privacy" class="input-check visually-hidden" />
@@ -454,16 +455,16 @@
                             <svg width="11" height="8" class="check-ico">
                                 <use href="./images/icons.svg#icon-checkbox"></use>
                             </svg>
-                        </span>Соглашаюсь с рассылкой и принимаю&nbsp<a href="">Условия
+                        </span>Соглашаюсь с рассылкой и принимаю&nbsp;<a href="">Условия
                             договора</a></label>
                 </div>
 
                 <button type="submit" class="modal-btn">Отправить</button>
 
-                </form>
-            </div>
+            </form>
         </div>
-        <script src="./js/modal.js"></script>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>

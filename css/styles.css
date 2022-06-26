@@ -840,7 +840,7 @@ img {
 	letter-spacing: 0.03em;
 }
 
-.modal-group textarea {
+.modal textarea {
 	display: block;
 
 	width: 100%;
@@ -861,7 +861,7 @@ img {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-group textarea::placeholder {
+.modal textarea::placeholder {
 	font-size: 12px;
 	line-height: calc(14 / 12);
 	letter-spacing: 0.01em;
@@ -869,8 +869,8 @@ img {
 	color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-group textarea:hover,
-.modal-group textarea:focus {
+.modal textarea:hover,
+.modal textarea:focus {
 	border-color: var(--accent-color);
 	cursor: pointer;
 }
